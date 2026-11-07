@@ -6,26 +6,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kalculator</title>
   <script src="main.js" defer></script>
+  <link rel="stylesheet" href="design.css">
 </head>
 
 <body>
-  <div id="result">0</div>
-  <button class="nums" id="btn-0">0</button>
-  <button class="nums" id="btn-1">1</button>
-  <button class="nums" id="btn-2">2</button>
-  <button class="nums" id="btn-3">3</button>
-  <button class="nums" id="btn-4">4</button>
-  <button class="nums" id="btn-5">5</button>
-  <button class="nums" id="btn-6">6</button>
-  <button class="nums" id="btn-7">7</button>
-  <button class="nums" id="btn-8">8</button>
-  <button class="nums" id="btn-9">9</button>
-  <button class="ops" id="btn-clear">clear</button>
-  <button class="ops" id="btn-+">+</button>
-  <button class="ops" id="btn--">-</button>
-  <button class="ops" id="btn-*">*</button>
-  <button class="ops" id="btn-/">/</button>
-  <button class="ops" id="btn-=">=</button>
+  <div class="calculator">
+    <div id="result">0</div>
+
+    <div class="keypad">
+      <!-- Row 1 -->
+      <button class="ops-nonbasic" id="btn-clear">clear</button>
+      <button class="ops" id="btn-/">/</button>
+
+      <!-- Row 2 -->
+      <button class="nums" id="btn-7">7</button>
+      <button class="nums" id="btn-8">8</button>
+      <button class="nums" id="btn-9">9</button>
+      <button class="ops" id="btn-*">*</button>
+
+      <!-- Row 3 -->
+      <button class="nums" id="btn-4">4</button>
+      <button class="nums" id="btn-5">5</button>
+      <button class="nums" id="btn-6">6</button>
+      <button class="ops" id="btn--">-</button>
+
+      <!-- Row 4 -->
+      <button class="nums" id="btn-1">1</button>
+      <button class="nums" id="btn-2">2</button>
+      <button class="nums" id="btn-3">3</button>
+      <button class="ops" id="btn-+">+</button>
+
+      <!-- Row 5 -->
+      <button class="nums" id="btn-0">0</button>
+      <button id="btn-decimal">.</button>
+      <button class="ops-nonbasic" id="btn-equals">=</button>
+    </div>
+  </div>
 </body>
 
 </html>
