@@ -18,10 +18,18 @@ const divide = function(a, b) {
 const operate = function(operator, a, b) {
   let output;
   switch (operator) {
-    case '+': output = add(a, b);
-    case '-': output = subtract(a, b);
-    case '*': output = multiply(a, b);
-    case '/': output = divide(a, b);
+    case '+':
+      output = add(a, b);
+      break;
+    case '-':
+      output = subtract(a, b);
+      break;
+    case '*':
+      output = multiply(a, b);
+      break;
+    case '/':
+      output = divide(a, b);
+      break;
   }
   return typeof output === 'number' ? Math.round(output * 10000) / 10000 : output;
 };
