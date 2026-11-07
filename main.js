@@ -14,3 +14,14 @@ const operate = function(operator, a, b){
     case '/': return divide(a, b);
   }
 }
+const result = document.querySelector('#result');
+const nums = document.querySelectorAll('.nums');
+nums.forEach((button)=>{
+  button.addEventListener('click',()=>{
+    if (result.textContent == 0){
+      result.textContent = button.textContent;
+    } else{
+      result.textContent = result.textContent+button.textContent;
+    }
+  });
+});
